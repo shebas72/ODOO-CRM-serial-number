@@ -12,7 +12,7 @@
        <record id="view_crm_lead_kanban_inherit_serial" model="ir.ui.view">
         <field name="name">crm.lead.kanban.inherit.serial</field>
         <field name="model">crm.lead</field>
-        <field name="inherit_id" ref="crm.crm_case_kanban_view"/>
+        <field name="inherit_id" ref="crm.crm_case_kanban_view_leads"/>
         <field name="arch" type="xml">
             <xpath expr="//div[contains(@class, 'o_kanban_record_title')]" position="before">
                 <div class="o_kanban_record_title">
