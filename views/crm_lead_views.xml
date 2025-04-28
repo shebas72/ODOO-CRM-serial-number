@@ -9,4 +9,18 @@
             </xpath>
         </field>
     </record>
+       <record id="view_crm_lead_kanban_inherit_serial" model="ir.ui.view">
+        <field name="name">crm.lead.kanban.inherit.serial</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[contains(@class, 'o_kanban_record_title')]" position="before">
+                <div class="o_kanban_record_title">
+                    <strong>
+                        <field name="serial_number"/>
+                    </strong>
+                </div>
+            </xpath>
+        </field>
+    </record>
 </odoo>
